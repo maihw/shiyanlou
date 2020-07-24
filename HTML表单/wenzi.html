@@ -1,7 +1,33 @@
+<!DOCTYPE html>
 <form name="formBox" method="post" action="">
     姓名：<input type="text" name="name" size="20" /><br />
     密码：<input type="password" name="pwd" mixlength="6" /><br />
     年龄：<input type="text" name="age" size="40" value="10" maxlength="3" /><br />
     性别：<input type="radio" name="sex" value="male" checked />男
-    <input type="radio" namevalue="female" />女
+    <input type="radio" name="sex" value="female" />女<br />
+    爱好：<input type="checkbox" name="music" checked />音乐
+    <input type="checkbox" name="art" />美术
+    <input type="checkbox" name="math" />数学<br />
+    自我评价：<input type="text" value="输入的内容" /><br />
+    <input type="text" />
+    <button type="reset">
+        This a reset button
+    </button><br />
+    <button type="submit">
+        This a submit button
+    </button><br />
+    <!--or-->
+    <input type="submit" value="This is a submit button" /><br />
+    <button type="button">
+        This a anonymous button
+    </button><br />
+    户籍：<select name="select"size="1" multiple="multiple">
+        <option value="成都">成都</option>
+        <option value="广州">广州</option>
+        <option value="四川">四川</option>
+        <option value="上海">上海</option>
+    </select><br />
+    工作经历，留下您的联系方式：<br />
+    <textarea name="textarea" cols="35" rows="5"></textarea>
+    <!--textarea代表文本域，cols代表列数，rows代表行数-->
 </form>
