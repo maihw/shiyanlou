@@ -31,3 +31,65 @@
     </script>
   </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <!--添加canvas元素，设置画布的大小-->
+    <canvas id="mycanvas" width="1314px" height="1314px">
+      对不起，你的浏览器不支持canvas
+    </canvas>
+
+    <script type="text/javascript">
+      //获取canvas元素
+      var myCanvas = document.getElementById("mycanvas");
+      //获取Context上下文
+      var ctx = myCanvas.getContext("2d");
+      //创建一张图片
+      var image = new Image();
+      //设置图片的路径
+      image.src = "a.png";
+      //当图片加载完成后
+      image.onload = function () {
+        //绘制图片
+        ctx.drawImage(image, 100, 100, 150, 150);
+      };
+    </script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <!--添加canvas元素，设置画布的大小-->
+    <canvas id="mycanvas" width="1314px" height="1314px">
+      对不起，你的浏览器不支持canvas
+    </canvas>
+
+    <script type="text/javascript">
+      //获取canvas元素
+      var myCanvas = document.getElementById("mycanvas");
+      //获取Context上下文
+      var ctx = myCanvas.getContext("2d");
+      //创建一张图片
+      var image = new Image();
+      //设置图片的路径
+      image.src = "a.png";
+      //当图片加载完成后
+      image.onload = function () {
+        //绘制图片
+        ctx.drawImage(image, 100, 100, 150, 150, 150, 150, 150, 150);
+      };
+    </script>
+  </body>
+</html>
