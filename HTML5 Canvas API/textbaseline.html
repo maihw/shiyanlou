@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <!--添加canvas元素，设置画布的大小-->
+    <canvas id="mycanvas" width="1314px" height="1314px">
+      对不起，你的浏览器不支持canvas
+    </canvas>
+
+    <script type="text/javascript">
+      //获取canvas元素
+      var myCanvas = document.getElementById("mycanvas");
+      //获取Context上下文
+      var ctx = myCanvas.getContext("2d");
+      //画一条线便于展示
+      ctx.strokeStyle = "blue";
+      ctx.moveTo(20, 100);
+      ctx.lineTo(1314, 100);
+      ctx.stroke();
+      //设置字体样式
+      ctx.font = "30px Georgia";
+      //值为alphabetic的情况
+      ctx.textBaseline = "alphabetic";
+      ctx.fillText("Hello Syl!", 20, 100);
+      //值为top的情况
+      ctx.textBaseline = "top";
+      ctx.fillText("Hello Syl!", 220, 100);
+      //值为hanging的情况
+      ctx.textBaseline = "hanging";
+      ctx.fillText("Hello Syl!", 420, 100);
+      //值为middle的情况
+      ctx.textBaseline = "middle";
+      ctx.fillText("Hello Syl!", 620, 100);
+      //值为ideographic的情况
+      ctx.textBaseline = "ideographic";
+      ctx.fillText("Hello Syl!", 820, 100);
+      //值为bottom的情况
+      ctx.textBaseline = "bottom";
+      ctx.fillText("Hello Syl!", 1020, 100);
+    </script>
+  </body>
+</html>

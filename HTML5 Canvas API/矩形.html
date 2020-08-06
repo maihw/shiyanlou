@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <!--添加canvas元素，设置画布的大小-->
+    <canvas id="mycanvas" width="520px" height="1314px">
+      对不起，你的浏览器不支持canvas
+    </canvas>
+
+    <script type="text/javascript">
+      //获取canvas元素
+      var myCanvas = document.getElementById("mycanvas");
+      //获取Context上下文
+      var ctx = myCanvas.getContext("2d");
+      //绘制矩形
+      ctx.rect(10, 10, 100, 200);
+      //绘制已定义的路径
+      ctx.stroke();
+    </script>
+  </body>
+</html>
+<!--前面绘制的矩形也可以这样写-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <!--添加canvas元素，设置画布的大小-->
+    <canvas id="mycanvas" width="520px" height="1314px">
+      对不起，你的浏览器不支持canvas
+    </canvas>
+
+    <script type="text/javascript">
+      //获取canvas元素
+      var myCanvas = document.getElementById("mycanvas");
+      //获取Context上下文
+      var ctx = myCanvas.getContext("2d");
+      //绘制矩形
+      ctx.strokeRect(100, 100, 100, 200);
+    </script>
+  </body>
+</html>

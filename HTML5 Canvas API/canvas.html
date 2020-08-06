@@ -1,24 +1,31 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
         <title></title>
     </head>
+
     <body>
-        <!--添加canvas元素，设置画布的大小-->
-        <canvas id="mycanvas" style="width:200;height:100">
+    <!--添加canvas元素，设置画布大小-->
+        <canvas id="mycanvas" width="520px" height="1314px">
             对不起，你的浏览器不支持canvas
-        </canvas>
+        </vanvas>
 
         <script type="text/javascript">
-            var myCanvas=document.getElementById<"mycanvas");
-            <!--通过document.getelementbyid来找到id为mycanvas的元-->
-            var ctx=myCanvas.getContext("2d");
-            <!--通过canvas元素的getContext()方法获取上下文，即创建Context对象，以获取允许进绘制的2D环境-->>
-            ctx.fillstyle = "red";
-            //设色
-            ctx.fillRect(0,0,100,100);
-            //设置矩形的位置和尺寸（位置从左上角原点坐标开始，尺寸为100*100的矩形
+        //获取canvas元素
+            var myCanvas = document.getElementById("mycanvas");
+            //获取Context上下文
+            var ctx = myCanvas.getContext("2d");
+            //开始路径绘制
+            ctx.beginPath();
+            //开始路径起点，坐标为（20，20)
+            ctx.moveTo(20,20);
+            //添加一个（200，200）的新点
+            ctx.lineTo(200,200);
+            //设置线的颜色
+            ctx.strokeStyle = "#CC0000";
+            //绘制已定议的路径
+            ctx.stroke();
         </script>
     </body>
 </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <!--添加canvas元素，设置画布的大小-->
+    <canvas id="mycanvas" width="520px" height="1314px">
+      对不起，你的浏览器不支持canvas
+    </canvas>
+
+    <script type="text/javascript">
+      //获取canvas元素
+      var myCanvas = document.getElementById("mycanvas");
+      //获取Context上下文
+      var ctx = myCanvas.getContext("2d");
+      //绘制矩形
+      ctx.fillRect(10, 10, 100, 200);
+      ctx.clearRect(20,20,50,50);
+    </script>
+  </body>
+</html>

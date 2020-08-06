@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <!--添加canvas元素，设置画布的大小-->
+    <canvas id="mycanvas" width="520px" height="1314px">
+      对不起，你的浏览器不支持canvas
+    </canvas>
+
+    <script type="text/javascript">
+      //获取canvas元素
+      var myCanvas = document.getElementById("mycanvas");
+      //获取Context上下文
+      var ctx = myCanvas.getContext("2d");
+      //开始路径绘制
+      ctx.beginPath();
+      //绘制圆
+      ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+      //绘制已定义的路径
+      ctx.stroke();
+    </script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <!--添加canvas元素，设置画布的大小-->
+    <canvas id="mycanvas" width="520px" height="1314px">
+      对不起，你的浏览器不支持canvas
+    </canvas>
+
+    <script type="text/javascript">
+      //获取canvas元素
+      var myCanvas = document.getElementById("mycanvas");
+      //获取Context上下文
+      var ctx = myCanvas.getContext("2d");
+      //开始路径绘制
+      ctx.beginPath();
+      //绘制圆
+      ctx.arc(100, 75, 50, 0, 0.5 * Math.PI);
+      //闭合
+      ctx.moveTo(100, 125);
+      ctx.lineTo(100, 75);
+      ctx.lineTo(150, 75);
+      //绘制已定义的路径
+      ctx.stroke();
+    </script>
+  </body>
+</html>

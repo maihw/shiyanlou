@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <!--添加canvas元素，设置画布的大小-->
+    <canvas id="mycanvas" width="520px" height="1314px">
+      对不起，你的浏览器不支持canvas
+    </canvas>
+
+    <script type="text/javascript">
+      //获取canvas元素
+      var myCanvas = document.getElementById("mycanvas");
+      //获取Context上下文
+      var ctx = myCanvas.getContext("2d");
+      //绘制实心文本
+      ctx.fillText("Hello Syl!", 10, 50);
+    </script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <!--添加canvas元素，设置画布的大小-->
+    <canvas id="mycanvas" width="520px" height="1314px">
+      对不起，你的浏览器不支持canvas
+    </canvas>
+
+    <script type="text/javascript">
+      //获取canvas元素
+      var myCanvas = document.getElementById("mycanvas");
+      //获取Context上下文
+      var ctx = myCanvas.getContext("2d");
+      //设置字体样式
+      ctx.font = "50px Georgia";
+      //绘制空心文本
+      ctx.strokeText("Hello Syl!", 10, 50);
+    </script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <!--添加canvas元素，设置画布的大小-->
+    <canvas id="mycanvas" width="520px" height="1314px">
+      对不起，你的浏览器不支持canvas
+    </canvas>
+
+    <script type="text/javascript">
+      //获取canvas元素
+      var myCanvas = document.getElementById("mycanvas");
+      //获取Context上下文
+      var ctx = myCanvas.getContext("2d");
+      //画一条线便于展示
+      ctx.strokeStyle = "blue";
+      ctx.moveTo(200, 20);
+      ctx.lineTo(200, 180);
+      ctx.stroke();
+      //设置字体样式
+      ctx.font = "20px Georgia";
+      //值为start的情况
+      ctx.textAlign = "start";
+      ctx.strokeText("Hello Syl!", 200, 20);
+      //值为center的情况
+      ctx.textAlign = "center";
+      ctx.strokeText("Hello Syl!", 200, 60);
+      //值为end的情况
+      ctx.textAlign = "end";
+      ctx.strokeText("Hello Syl!", 200, 100);
+      //值为left的情况
+      ctx.textAlign = "left";
+      ctx.strokeText("Hello Syl!", 200, 140);
+      //值为right的情况
+      ctx.textAlign = "right";
+      ctx.strokeText("Hello Syl!", 200, 180);
+    </script>
+  </body>
+</html>
+
