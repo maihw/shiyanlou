@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>shiyanlou</title>
+    </head>
+    <body>
+        <canvas id="mycanvas" style="width:8000;height:10000">
+            对不起，你的济览器不支持canvas
+        </canvas>
+        <script type="text/javascript">
+            var myCanvas = document.getElementById("mycanvas");
+            var ctx = myCanvas.getContext("2d");
+            ctx.fillStyle = "pink";
+            ctx.fillRect(0,0,100,100);
+            ctx.beginPath(0,101);
+            ctx.moveTo( 0,101);
+            ctx.lineTo(100,10);
+            ctx.lineTo(100,60);
+            ctx.closePath();
+            ctx.lineWidth = 2.0;
+            ctx.strokeStyle = "#CC0000";
+            ctx.stroke();
+        </script>
+        <script type="text/javascript">
+            var myCanvas = document.getElementById("mycanvas");
+            var ctx = myCanvas.getContext("2d");
+            ctx.rect(50,50,60,60);
+            ctx.stroke();
+            ctx.strokeRect(60,60,100,100);
+            ctx.fillRect(0,0,50,50);
+            ctx.clearRect(30,30,50,50);
+            ctx.arc(100,100,2,0,180,false);
+            ctx.stroke();
+        </script>
+    </body>
+</html>
